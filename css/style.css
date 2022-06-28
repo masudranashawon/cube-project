@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(to right top, #051937, #002133, #002628, #192821, #282a24);
+    height: 100vh;
+}
+
+.cube-section {
+    height: 530px;
+}
+
+.cube-wraper {
+    width: 15%;
+    position: absolute;
+    height: 430px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.cube-wraper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.cube {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border: 1px solid #041f21e8;
+    box-shadow: 1px 1px 3px #041f21e8;
+}
+
+#one {
+    background: url(../images/one.gif) no-repeat center center / cover;
+    transform: translate(0%, 80%) rotate(-45deg) skew(15deg, 15deg) scale(.8);
+    transition: all 3s;
+
+}
+
+#two {
+    background: url(../images/two.gif) no-repeat center center / cover;
+    transform: translate(0%, 80%) rotate(-45deg) skew(15deg, 15deg) scale(.6);
+    transition: all 3s;
+}
+
+#three {
+    background: url(../images/three.gif) no-repeat center center / cover;
+    transform: translate(0%, 80%) rotate(-45deg) skew(15deg, 15deg) scale(.4);
+    transition: all 3s;
+}
+
+.button-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.button-section button {
+    font-size: 20px;
+    padding: 13px 28px;
+    font-weight: bold;
+    font-family: arial;
+    border-radius: 15px;
+    color: #666;
+    background: #171515;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    transition: all .5s;
+    outline: none;
+}
+
+.button-section :nth-child(1){
+        margin-right: 20px;
+}
+
+.button-section button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 137, 209, 0.986);
+    box-shadow: 0 0 15px rgba(13, 137, 209, 0.986);
+    transform: scale(0.7);
+    border-radius: 15px;
+    transition: all .5s;
+    z-index: -1; 
+}
+
+.button-section :nth-child(2)::before {
+    background-color: rgba(211, 17, 10, 0.986);
+    box-shadow: 0 0 15px rgba(211, 17, 10, 0.986);   
+}
+
+.button-section button:hover::before {
+    transform: scale(1.1);
+    filter: blur(3px);
+}
+
+.button-section button:hover {
+    color: rgba(13, 137, 209, 0.986);
+    box-shadow: 0 0 15px rgba(13, 137, 209, 0.986);
+    text-shadow: 0 0 5px rgba(13, 137, 209, 0.986);
+}
+
+.button-section :nth-child(2):hover{
+    color: rgba(211, 17, 10, 0.986);
+    box-shadow: 0 0 15px rgba(211, 17, 10, 0.986);
+    text-shadow: 0 0 5px rgba(211, 17, 10, 0.986);
+}

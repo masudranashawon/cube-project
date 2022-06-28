@@ -1,0 +1,98 @@
+/* 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    THIS FILE FOR RESPONSIVENESS
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+*/
+@media only screen and (max-width:1440px) {
+    .cube-wraper {
+        width: 13%;
+    }
+}
+
+@media only screen and (max-width:1366px) {
+    .cube-wraper {
+        width: 15%;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .cube-wraper {
+        width: 18%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+.cube-wraper {
+        width: 23%;
+        top: 43%;
+        transform: translate(-50%, -50% ) scale(0.8);
+    }
+
+    .cube-section {
+        height: 420px;
+    }
+    
+}
+
+@media only screen and (max-width:460px) {
+    .cube-wraper {
+        width: 42%;
+        top: 43%;
+        transform: translate(-50%, -50% ) scale(0.8);
+    }
+
+    .button-section button {
+        font-size: 18px;
+        padding: 12px 15px;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .cube-wraper {
+        width: 47%;
+        top: 43%;
+        transform: translate(-50%, -50% ) scale(0.8);
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .cube-wraper {
+        width: 52%;
+        top: 35%;
+        transform: translate(-50%, -50% ) scale(0.7);
+    }
+
+    .cube-section {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .cube-wraper {
+        width: 55%;
+        transform: translate(-50%, -50% ) scale(0.6);
+        top: 35%;
+    }
+
+    .cube-section {
+        height: 370px;
+    }
+
+    .button-section button {
+        font-size: 16px;
+        padding: 10px 12px;
+        margin-right: 15px;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .cube-wraper {
+        width: 65%;
+        transform: translate(-50%, -50% ) scale(0.5);
+        top: 30%;
+    }
+
+    .cube-section {
+        height: 350px;
+    }
+}
